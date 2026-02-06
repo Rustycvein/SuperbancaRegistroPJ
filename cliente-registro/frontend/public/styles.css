@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #3a3a3a;
+    color: #fff;
+}
+
+.container {
+    background-color: #2f2f2f;
+    padding: 20px;
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+h1 {
+    font-size: 28px; ;
+    text-align: center;
+    color: #e53935;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+label {
+    font-size: 14px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 6px;
+    border: none;
+    background-color: #c62828;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+input::placeholder {
+    color: #999;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+input:required:invalid{
+    border: 2px solid #ff4d4d;
+}
+
+input:required:valid{
+    border: 2px solid #2ecc71;
+}
+
+.bordes{
+ margin: 0% 15%;
+}
