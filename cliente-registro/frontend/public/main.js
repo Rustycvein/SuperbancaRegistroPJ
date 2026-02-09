@@ -60,12 +60,10 @@ var enviarDatos = function (formData) { return __awaiter(_this, void 0, void 0, 
             case 2:
                 resultado = _a.sent();
                 if (respuesta.ok) {
-                    console.log("Respuesta del servidor:", resultado.mensaje);
-                    alert("¡Registro exitoso!");
+                    alert("¡Registro enviado exitosamente!");
                     form.reset();
                 }
                 else {
-                    console.error("Error del servidor:", resultado.mensaje);
                     alert("Error: " + resultado.mensaje);
                 }
                 return [3 /*break*/, 4];

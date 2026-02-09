@@ -18,19 +18,17 @@ const enviarDatos = async (formData: FormData) => {
         const resultado = await respuesta.json();
 
         if (respuesta.ok) {
-            console.log("Respuesta del servidor:", resultado.mensaje);
-            alert("¡Registro exitoso!");
+            alert("¡Registro enviado exitosamente!");
             form.reset();
         } else {
-            console.error("Error del servidor:", resultado.mensaje);
             alert("Error: " + resultado.mensaje);
         }
+
     } catch (error) {
         console.error("Error de conexión:", error);
         alert("No se pudo conectar con el servidor");
     }
 };
-
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 

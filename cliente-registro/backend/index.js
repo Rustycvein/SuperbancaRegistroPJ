@@ -63,8 +63,8 @@ async function iniciarServidor() {
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'holamundo@gmail.com',
-        pass: 'holamundo'
+        user: '**********',
+        pass: '***********'
     }
 });
 
@@ -120,9 +120,9 @@ app.post('/registro', (req, res) => {
 
             const excelBuffer = await workbook.xlsx.writeBuffer();
 
-            await transporter.sendMail({
-                from: '"Registro Superbanca" <felixcordero0428@gmail.com>',
-                to: 'holamundo@gmail.com',
+                transporter.sendMail({
+                from: '"Registro Superbanca" <*********>',
+                to: '********',
                 subject: `Nuevo Registro: ${Nombre} ${Apellido}`,
                 text: `Datos de registro adjuntos.`,
                 attachments: [
